@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+    <link rel="stylesheet" href="./index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;1,600&display=swap" rel="stylesheet">
+
+<style>
+    /* Add this style block for the media query */
+    @media (max-width: 412px) {
+        .vertical-text {
+            font-size: 40px;
+            margin-top: -300px; 
+           margin-left: -52px;
+        }
+        .circle{
+            display: none;
+        }
+        #animate{
+            width: 100px;
+            margin-top: 120px;
+            margin-left: 60px;
+        }
+        
+#hid h3{
+    margin-left: 70px; 
+    font-family: 'poppins';
+    font-weight: bold;
+}
+#hid h6{
+    margin-left: 25px; 
+    font-family: 'poppins';
+}
+#hid h4{
+    margin-left: 120px; 
+    font-family: 'poppins';
+    font-weight: bold;
+}
+
+#hid .btn{
+    margin-left: 160px; 
+    font-family: 'poppins';
+    font-weight: bold;
+}
+.circ {
+    width: 250px; /* Double the radius to get the diameter */
+    height: 250px; /* Double the radius to get the diameter */
+    background-color: rgb(72, 194, 243); /* Background color of the circle */
+    border-radius: 50%;
+    margin-top: 120px;
+    margin-left:250px;
+}
+    }
+</style>
+
+
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+            <img src="./bw_logo_bluestock_fff.png" alt="">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link " aria-current="page" href="#"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><b>Support</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><b>Contact</b></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="circle"></div>
+    
+
+    <!-- Additional content to be revealed after clicking toggler button -->
+    <div class="collapse" id="collapseContent">
+        <div class="container extra-links mt-3">
+            <div class="row">
+                <div class="col">
+                    <a class="nav-link active" aria-current="page" href="#"><b>Home</b></a> 
+                </div>
+                <div class="col">
+                    <a class="nav-link" href="#"><b>Support</b></a>
+                </div>
+                <div class="col">
+                    <a class="nav-link " href="#"><b>Contact</b></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="circle"></div> -->
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-JtslW5/zxQzQYDrqoBU4nbYgsi9F4R9fY9CcNHtPY3Oz9NX4bUgjZ5g4g/Yw1/a8" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-X7jvoYb3mYbPxrbFC2mOTauH9D6NQrjylbmUvFEwBweDThUgVqlS8Iroo/+nM2tU" crossorigin="anonymous"></script>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var toggler = document.querySelector('.navbar-toggler');
+            var collapseContent = document.querySelector('#collapseContent');
+
+            toggler.addEventListener('click', function() {
+                collapseContent.classList.toggle('show');
+            });
+        });
+    </script> 
+    <div class="vertical-text">Oops...</div>    
+   
+
+ 
+    <div id="animate">
+        
+    
+        <dotlottie-player src="https://lottie.host/336ab48c-3613-4006-ac6d-f6e5ebebc2f7/DUggldeIz6.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
+        
+    </div>
+    <div id="hid">
+    <h3>Something Went Wrong</h3>
+    <h6>Sorry,We can't find the page you're looking for.</h6>
+    <h4>Error Code 404</h4>
+    <button type="button" class="btn btn-primary">Go Back</button>
+</div>
+<div class="circ"></div>   
+
+</body>
+</html>

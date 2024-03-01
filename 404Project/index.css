@@ -1,0 +1,132 @@
+ 
+ 
+ body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+   
+} 
+@media screen and (max-width: 1452px) {
+    body {
+      overflow-x: hidden;
+    }
+    body, html {
+      overflow-y: scroll;
+      position: fixed;
+      height: 100%;
+    }
+    body {
+     
+      width: 100%;
+      overflow-y: scroll;
+    }
+  }
+  
+  @media screen and (max-width: 412px) {
+    body {
+      overflow-x: hidden;
+    }
+    body, html {
+      overflow-y: hidden;
+      position: fixed;
+      height: 100%;
+    }
+    body {
+     
+      width: 100%;
+      overflow-y: hidden;
+    }
+  }
+.logo img{
+    height: 35px;
+    width: 190px;
+}
+.container img{
+    width: 190px;
+    height: 35px;
+    margin-left: -100px;
+}  
+
+
+
+@media screen and (max-width:1452px) {
+    .container img{
+        margin-left: 3px;
+    }
+} 
+.vertical-text {
+    writing-mode: vertical; /* Set vertical writing mode */
+    transform: rotate(330deg); /* Rotate the text by 45 degrees */
+    white-space: nowrap; /* Prevent text wrapping */
+    position: absolute; /* Position the text */
+    top: 50%; /* Position the text vertically */
+    left: 50%; /* Position the text horizontally */
+    transform-origin: top left; /* Set transform origin */
+    font-size: 55px; /* Set font size */ 
+    font-family: 'poopins'; 
+    width: -50px;
+    color: #a7e5ec; 
+    margin-top: -212px; 
+    text-align: center;
+    margin-left:-100px; 
+    color: white; /* Set default text color to white */
+    /* text-shadow: 
+        -1px -1px 0 rgb(152, 229, 233),  
+        1px -1px 0 rgb(152, 229, 233),
+        -1px 1px 0 rgb(152, 229, 233),
+        1px 1px 0 rgb(152, 229, 233); */ 
+        text-shadow: 
+                -1px -1px 0 rgb(89, 184, 239),  
+                1px -1px 0  rgb(89, 184, 239),
+                -1px 1px 0  rgb(89, 184, 239),
+                1px 1px 0  rgb(89, 184, 239),
+                -2px -2px 0  rgb(89, 184, 239),  
+                2px -2px 0  rgb(89, 184, 239),
+                -2px 2px 0  rgb(89, 184, 239),
+                2px 2px 0  rgb(89, 184, 239),
+                -3px -3px 0  rgb(89, 184, 239) ,
+                3px -3px 0  rgb(89, 184, 239),
+                -3px 3px 0  rgb(89, 184, 239),
+                3px 3px 0  rgb(89, 184, 239);
+
+}  
+.circle {
+    width: 200px; /* Double the radius to get the diameter */
+    height: 200px; /* Double the radius to get the diameter */
+    background-color: rgb(72, 194, 243);/* Background color of the circle */
+    border-radius: 50%;
+    margin-top: 200px;
+    margin-left: -100px;
+}
+
+#animate{
+    margin-top: -250px;
+    margin-left: 600px;
+}
+#hid h3{
+    margin-left: 600px; 
+    font-family: 'poppins';
+    font-weight: bold;
+}
+#hid h6{
+    margin-left: 590px; 
+    font-family: 'poppins';
+}
+#hid h4{
+    margin-left: 680px; 
+    font-family: 'poppins';
+    font-weight: bold;
+}
+
+#hid .btn{
+    margin-left: 720px; 
+    font-family: 'poppins';
+    font-weight: bold;
+}
+.circ {
+    width: 250px; /* Double the radius to get the diameter */
+    height: 250px; /* Double the radius to get the diameter */
+    background-color: rgb(72, 194, 243); /* Background color of the circle */
+    border-radius: 50%;
+    margin-top: -150px;
+    margin-left: 1350px;
+}
